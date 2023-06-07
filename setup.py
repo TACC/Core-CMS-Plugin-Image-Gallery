@@ -8,14 +8,14 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='__dist-name__',
+    name='djangocms-tacc-image-gallery',
     version='0.1.0',
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',
-    description='A DjangoCMS plugin (for TACC Core CMS) to ______.',
+    description='A DjangoCMS plugin (for TACC Core CMS) to create an image gallery.',
     long_description=README,
-    url='https://github.com/TACC/__Repo_Name__/',
+    url='https://github.com/TACC/Core-CMS-Plugin-Image-Gallery/',
     author='TACC ACI WMA',
     author_email='wma-portals@gmail.com',
     # SEE: https://packaging.python.org/discussions/install-requires-vs-requirements/
