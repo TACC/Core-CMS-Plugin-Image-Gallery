@@ -1,11 +1,7 @@
 ## Texas Advanced Computing Center
 # Django CMS App: "Image Gallery"
 
-This app creates an image gallery using:
-
-- images via child plugins
-- thrid-party scripts
-- https://github.com/TACC/Core-Styles
+This app creates an image gallery using images via child plugins, thrid-party scripts, and https://github.com/TACC/Core-Styles.
 
 - __`__dist-name__`__: `djangocms-tacc-image-gallery`
 - __`__package_name__`__: `djangocms_tacc_image_gallery`
