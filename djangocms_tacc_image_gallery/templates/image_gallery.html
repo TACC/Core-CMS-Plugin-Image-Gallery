@@ -1,5 +1,7 @@
 {% load cms_tags %}
 
+{% messages %}
+
 {# Load assets (but only once) #}
 {% if not assets_loaded %}
     {% load static %}
