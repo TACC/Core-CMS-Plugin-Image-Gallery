@@ -18,6 +18,11 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
     cache = True
     text_enabled = False
     allow_children = True
+    child_classes = [
+        'PicturePlugin',
+        'Bootstrap4PicturePlugin',
+        'ImagePlugin',
+    ]
 
     fieldsets = (
         (None, {
