@@ -27,10 +27,4 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
         if not assets_loaded:
             request.session['assets_loaded'] = True
 
-        classes = concat_classnames([
-            's-image-gallery',
-            instance.attributes.get('class'),
-        ])
-        instance.attributes['class'] = classes
-
         return context
