@@ -1,9 +1,8 @@
 {# Load assets (but only once) #}
-{% if not request.session.assets_loaded %}
+{% if not assets_loaded %}
     {% load static %}
     <script defer src="{% static 'djangocms_tacc_image_gallery/js/initialize.js' %}"></script>
     <link type="text/css" href="{% static 'djangocms_tacc_image_gallery/css/gallery.css' %}" rel="stylesheet" />
-    {% request.session.assets_loaded = True %}
 {% endif %}
 
 {# Render markup #}
