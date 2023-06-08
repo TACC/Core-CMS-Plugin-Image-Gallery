@@ -34,7 +34,7 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
         if not assets_loaded:
             context['assets_loaded'] = True
             # DEBUG:
-            messages.info(context['request'], f'assets_loaded: {assets_loaded}')
+            messages.info(context['assets_loaded'], f'assets_loaded: {assets_loaded}')
 
         return context
 
