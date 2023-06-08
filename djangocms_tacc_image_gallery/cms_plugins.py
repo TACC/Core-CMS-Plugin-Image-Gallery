@@ -3,9 +3,6 @@ from cms.plugin_pool import plugin_pool
 
 from django.utils.translation import ugettext as _
 
-# DEBUG:
-from django.contrib import messages
-
 @plugin_pool.register_plugin
 class TaccsiteImageGalleryPlugin(CMSPluginBase):
     """
@@ -30,11 +27,7 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
     def render(self, context, instance, placeholder):
         context = super().render(context, instance, placeholder)
 
-        assets_loaded = context.get('assets_loaded', False)
-        if not assets_loaded:
-            context['assets_loaded'] = True
-            # DEBUG:
-            messages.info(context['assets_loaded'], f'assets_loaded: {assets_loaded}')
+        context['assets_loaded'] = getattr(context, 'assets_loaded', False)
 
         return context
 
