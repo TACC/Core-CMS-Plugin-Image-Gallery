@@ -3,6 +3,8 @@ from cms.plugin_pool import plugin_pool
 
 from django.utils.translation import gettext as _
 
+from .models import TaccsiteImageGallery
+
 @plugin_pool.register_plugin
 class TaccsiteImageGalleryPlugin(CMSPluginBase):
     """
@@ -10,6 +12,7 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
     https://confluence.tacc.utexas.edu/x/LIAjCQ
     """
     module = 'TACC Site'
+    model = TaccsiteImageGallery
     name = _('Image Gallery')
     render_template = 'image_gallery.html'
 
