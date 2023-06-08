@@ -15,5 +15,8 @@ This app creates an image gallery using images via child plugins, thrid-party sc
 ## Usage
 
 1. Add instance of plugin to a page.
-1. Within it, to supply images, add instances of Image/Picture plugins.
-1. See plugin render content that matches configuration.
+2. Within it, to supply images, add instances of Image/Picture plugins.
+3. Verify plugin:
+    - renders images added
+    - wraps those images in links
+    - the image links load an image gallery / carousel
