@@ -1,9 +1,7 @@
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
-from django.utils.translation import gettext as _
 
-from .helpers import concat_classnames
-from .models import TaccsiteImageGallery
+from django.utils.translation import gettext as _
 
 @plugin_pool.register_plugin
 class TaccsiteImageGalleryPlugin(CMSPluginBase):
@@ -18,7 +16,7 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
 
     cache = True
     text_enabled = False
-    allow_children = False
+    allow_children = True
 
     fieldsets = [
         (_('Advanced settings'), {
