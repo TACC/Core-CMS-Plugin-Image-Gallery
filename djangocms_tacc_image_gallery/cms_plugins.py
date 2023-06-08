@@ -25,12 +25,6 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
             )
         }),
     ]
-    # Check if the asset has been loaded
-    asset_loaded = request.session.get('asset_loaded', False)
-
-    if not asset_loaded:
-        # Set the flag to indicate the asset has been loaded
-        request.session['asset_loaded'] = True
 
     # Render
 
