@@ -3,7 +3,7 @@ from cms.plugin_pool import plugin_pool
 
 from django.utils.translation import gettext as _
 
-from taccsite_cms.contrib.constants import TEXT_FOR_NESTED_PLUGIN_CONTENT_ADD
+from .constants import TEXT_FOR_NESTED_PLUGIN_CONTENT_ADD
 
 @plugin_pool.register_plugin
 class TaccsiteImageGalleryPlugin(CMSPluginBase):
