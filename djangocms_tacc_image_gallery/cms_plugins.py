@@ -3,8 +3,6 @@ from cms.plugin_pool import plugin_pool
 
 from django.utils.translation import ugettext as _
 
-from .constants import TEXT_FOR_NESTED_PLUGIN_CONTENT_ADD
-
 @plugin_pool.register_plugin
 class TaccsiteImageGalleryPlugin(CMSPluginBase):
     """
