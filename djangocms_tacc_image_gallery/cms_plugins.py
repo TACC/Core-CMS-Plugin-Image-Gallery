@@ -10,7 +10,6 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
     https://confluence.tacc.utexas.edu/x/LIAjCQ
     """
     module = 'TACC Site'
-    model = TaccsiteImageGallery
     name = _('Image Gallery')
     render_template = 'image_gallery.html'
 
