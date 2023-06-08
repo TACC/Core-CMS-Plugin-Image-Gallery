@@ -42,7 +42,4 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
 
     @classmethod
     def get_empty_change_form_text(cls, obj=None):
-        return _(TEXT_FOR_NESTED_PLUGIN_CONTENT_ADD.format(
-            element='an image',
-            plugin_name='Image'
-        ))
+        return _('To add an image, nest an "Image" or "Picture / Image" plugin inside this plugin.')
