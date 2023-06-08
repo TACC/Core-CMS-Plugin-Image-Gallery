@@ -43,6 +43,7 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
         assets_loaded = request.session.get('assets_loaded', False)
         if not assets_loaded:
             request.session['assets_loaded'] = True
+            assets_loaded = True
 
         context.update({
             'assets_loaded': request.session['assets_loaded']
