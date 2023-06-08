@@ -24,16 +24,6 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
         'ImagePlugin',
     ]
 
-    fieldsets = (
-        (None, {
-            'description': TEXT_FOR_NESTED_PLUGIN_CONTENT_ADD.format(
-                element='an image',
-                plugin_name='Image'
-            ),
-            'fields': (),
-        }),
-    )
-
     # Render
 
     def render(self, context, instance, placeholder):
@@ -49,3 +39,10 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
             'assets_loaded': request.session['assets_loaded']
         })
         return context
+
+    @classmethod
+    def get_empty_change_form_text(cls, obj=None):
+        return _(TEXT_FOR_NESTED_PLUGIN_CONTENT_ADD.format(
+            element='an image',
+            plugin_name='Image'
+        ))
