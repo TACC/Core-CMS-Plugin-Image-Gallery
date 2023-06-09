@@ -28,7 +28,7 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
         context = super().render(context, instance, placeholder)
 
         context.update({
-            'child_classes': child_classes
+            'child_classes': self.child_classes
         })
 
         return context
