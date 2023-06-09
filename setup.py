@@ -22,6 +22,8 @@ setup(
     install_requires=[
         'Django>=3.2',
         'django-cms>=3.7.4,<4',
+        'django-sekizai>=2.0',
+        'djangocms-picture>=3.0,<4.0',
     ],
     # SEE: https://pypi.org/classifiers/
     classifiers=[

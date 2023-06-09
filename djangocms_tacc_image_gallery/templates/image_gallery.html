@@ -1,16 +1,13 @@
-{% load cms_tags %}
+{% load cms_tags static sekizai_tags %}
 
-{# Load assets (but only once) #}
-{% if not are_assets_loaded %}
-    {% load static %}
+{% addtoblock 'js' %}
     <script defer src="{% static 'djangocms_tacc_image_gallery/js/initialize.js' %}"></script>
-    <link type="text/css" href="{% static 'djangocms_tacc_image_gallery/css/gallery.css' %}" rel="stylesheet" />
-    are_assets_loaded: FALSE
-{% else %}
-    are_assets_loaded: TRUE
-{% endif %}
+{% endaddtoblock %}
 
-{# Render markup #}
+{% addtoblock 'css' %}
+    <link type="text/css" href="{% static 'djangocms_tacc_image_gallery/css/gallery.css' %}" rel="stylesheet" />
+{% endaddtoblock %}
+
 <div class="s-image-gallery">
 {% for plugin in instance.child_plugin_instances %}
     {% render_plugin plugin %}
