@@ -1,18 +1,14 @@
-{% load cms_tags asset_load %}
+{% load cms_tags %}
 
 {# Load assets (but only once) #}
-{% are_assets_loaded as are_assets_loaded %}
-{% with should_load_assets=not are_assets_loaded %}
-    {% if should_load_assets %}
-        {% load static %}
-        <script defer src="{% static 'djangocms_tacc_image_gallery/js/initialize.js' %}"></script>
-        <link type="text/css" href="{% static 'djangocms_tacc_image_gallery/css/gallery.css' %}" rel="stylesheet" />
-        assets_loaded: FALSE ({{assets_loaded}})
-        {% set_assets_loaded True %}
-    {% else %}
-        assets_loaded: TRUE ({{assets_loaded}})
-    {% endif %}
-{% endwith %}
+{% if not are_assets_loaded %}
+    {% load static %}
+    <script defer src="{% static 'djangocms_tacc_image_gallery/js/initialize.js' %}"></script>
+    <link type="text/css" href="{% static 'djangocms_tacc_image_gallery/css/gallery.css' %}" rel="stylesheet" />
+    assets_loaded: FALSE ({{assets_loaded}})
+{% else %}
+    assets_loaded: TRUE ({{assets_loaded}})
+{% endif %}
 
 {# Render markup #}
 <div class="s-image-gallery">

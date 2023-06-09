@@ -26,8 +26,11 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
 
     def render(self, context, instance, placeholder):
         context = super().render(context, instance, placeholder)
+        request = context['request']
 
-        context['assets_loaded'] = getattr(context, 'assets_loaded', False)
+        if not request.are_assets_loaded:
+            request.are_assets_loaded = True
+            context['are_assets_loaded'] = True
 
         return context
 
