@@ -11,7 +11,7 @@ This app creates an image gallery using images via child plugins, thrid-party sc
 ## Quick Start
 
 1. Follow https://github.com/wesleyboar/Core-CMS-App/wiki/Core-CMS-App-Usage-Quick-Start.
-2. If you do not already have `django-sekizai` configured, follow just "Configuration" section of https://django-sekizai.readthedocs.io/en/latest/#configuration.
+2. If you do not already have `django-sekizai` configured, follow just "Configuration" section of https://django-sekizai.readthedocs.io/en/2.0.0/#configuration.
 
 ## Usage
 
