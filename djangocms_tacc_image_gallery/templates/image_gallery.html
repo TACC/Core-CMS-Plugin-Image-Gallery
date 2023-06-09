@@ -1,7 +1,7 @@
 {% load cms_tags static sekizai_tags %}
 
 {% addtoblock 'js' %}
-    <script defer src="{% static 'djangocms_tacc_image_gallery/js/initialize.js' %}"></script>
+    <script type="module" src="{% static 'djangocms_tacc_image_gallery/js/initialize.js' %}" defer></script>
 {% endaddtoblock %}
 
 {% addtoblock 'css' %}
