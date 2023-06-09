@@ -8,8 +8,14 @@
     <link type="text/css" href="{% static 'djangocms_tacc_image_gallery/css/gallery.css' %}" rel="stylesheet" />
 {% endaddtoblock %}
 
+{% spaceless %}
 <div class="s-image-gallery">
 {% for plugin in instance.child_plugin_instances %}
-    {% render_plugin plugin %}
+    {% if plugin.plugin_type in ['ImagePlugin', 'PicturePlugin'] %}
+        <a href="{{ plugin.img_src }}" title="{{ plugin.alt_text }}" target="_blank">
+            {% render_plugin plugin %}
+        </a>
+    {% endif %}
 {% endfor %}
 </div>
+{% endspaceless %}
