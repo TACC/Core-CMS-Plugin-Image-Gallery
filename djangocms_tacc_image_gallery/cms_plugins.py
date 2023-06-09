@@ -30,7 +30,7 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
 
         are_assets_loaded = request.session.get('are_assets_loaded', False)
 
-        if not request.session.get('are_assets_loaded', False):
+        if not are_assets_loaded:
             request.session['are_assets_loaded'] = True
             are_assets_loaded = True
 
