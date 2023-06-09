@@ -1,7 +1,7 @@
 {% load cms_tags asset_load %}
 
 {# Load assets (but only once) #}
-{% are_assets_loaded as should_load_assets %}
+{% are_assets_loaded as are_assets_loaded %}
 {% with should_load_assets=not are_assets_loaded %}
     {% if should_load_assets %}
         {% load static %}
