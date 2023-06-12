@@ -9,7 +9,7 @@
 {% endaddtoblock %}
 
 {% spaceless %}
-<div class="s-image-grid  lightgallery">
+<div class="lightgallery">
 {% for plugin in instance.child_plugin_instances %}
     {% if plugin.plugin_type in child_classes and plugin.img_src %}
         <a
