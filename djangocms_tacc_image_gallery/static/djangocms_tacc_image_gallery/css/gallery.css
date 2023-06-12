@@ -2,6 +2,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css");
 
 /* TACC Overrides */
-/* NOTE: Overrides should be:
-/*       - from https://github.com/TACC/Core-Styles
-/*       - via https://unpkg.com/@tacc/core-styles */
+/* NOTE: Overrides (if any) should be:
+/*       - from a https://github.com/TACC/Core-Styles/blob/main/src/lib/_imports/core-styles.lightgallery.css
+/*       - via a https://unpkg.com/browse/@tacc/core-styles@2.9.0/dist/core-styles.lightgallery.css */
