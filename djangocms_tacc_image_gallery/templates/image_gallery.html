@@ -15,11 +15,13 @@
         {% if plugin.img_src %}
         <a
             href="{{ plugin.img_src }}"
-            title="{% if plugin.attributes.alt %}
-                {{ plugin.attributes.alt }}
-            {% elif plugin.picture.default_alt_text %}
-                {{ plugin.picture.default_alt_text }}
-            {% endif %}"
+            title="{% spaceless %}
+                {% if plugin.attributes.alt %}
+                    {{ plugin.attributes.alt }}
+                {% elif plugin.picture.default_alt_text %}
+                    {{ plugin.picture.default_alt_text }}
+                {% endif %}
+            {% endspaceless %}"
         {% if not plugin.link_target %}
             {# FAQ: If no target is set, and JavaScript fails, #}
             {#      then the image should open in new tab #}
