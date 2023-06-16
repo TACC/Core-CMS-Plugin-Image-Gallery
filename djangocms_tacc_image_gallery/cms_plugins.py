@@ -20,6 +20,8 @@ class TaccsiteImageGalleryPlugin(CMSPluginBase):
         'PicturePlugin',
         'Bootstrap4PicturePlugin',
         'ImagePlugin',
+        'LinkPlugin',
+        'Bootstrap4LinkPlugin',
     ]
 
     # Render
