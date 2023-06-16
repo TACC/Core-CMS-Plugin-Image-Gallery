@@ -15,10 +15,10 @@
         {% if plugin.img_src %}
         <a
             href="{{ plugin.img_src }}"
-            title="{% if instance.attributes.alt %}
-                {{ instance.attributes.alt }}
-            {% elif instance.picture.default_alt_text %}
-                {{ instance.picture.default_alt_text }}
+            title="{% if plugin.attributes.alt %}
+                {{ plugin.attributes.alt }}
+            {% elif plugin.picture.default_alt_text %}
+                {{ plugin.picture.default_alt_text }}
             {% endif %}"
             target="_blank"
             {{ instance.link_attributes_str }}
