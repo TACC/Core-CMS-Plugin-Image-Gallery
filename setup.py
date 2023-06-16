@@ -15,7 +15,7 @@ setup(
     license='BSD License',
     description='A DjangoCMS plugin (for TACC Core CMS) to create an image gallery.',
     long_description=README,
-    url='https://github.com/wesleyboar/Core-CMS-Plugin-Image-Gallery/',
+    url='https://github.com/TACC/Core-CMS-Plugin-Image-Gallery/',
     author='TACC ACI WMA',
     author_email='wma-portals@gmail.com',
     # SEE: https://packaging.python.org/discussions/install-requires-vs-requirements/
