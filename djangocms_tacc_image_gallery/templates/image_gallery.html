@@ -20,7 +20,11 @@
             {% elif plugin.picture.default_alt_text %}
                 {{ plugin.picture.default_alt_text }}
             {% endif %}"
+        {% if not plugin.link_target %}
+            {# FAQ: If no target is set, and JavaScript fails, #}
+            {#      then the image should open in new tab #}
             target="_blank"
+        {% endif %}
             {{ plugin.link_attributes_str }}
         >
             {% render_plugin plugin %}
