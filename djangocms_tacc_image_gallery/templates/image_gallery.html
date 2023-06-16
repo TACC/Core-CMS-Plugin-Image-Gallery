@@ -11,7 +11,8 @@
 {% spaceless %}
 <div class="lightgallery">
 {% for plugin in instance.child_plugin_instances %}
-    {% if plugin.plugin_type in child_classes and plugin.img_src %}
+    {% if plugin.plugin_type in child_classes %}
+        {% if plugin.img_src %}
         <a
             href="{{ plugin.img_src }}"
             title="{% if instance.attributes.alt %}
@@ -23,6 +24,9 @@
         >
             {% render_plugin plugin %}
         </a>
+        {% else %}
+            {% render_plugin plugin %}
+        {% endif %}
     {% endif %}
 {% endfor %}
 </div>
