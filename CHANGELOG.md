@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ...
 
+## [0.1.4]: Django 4 Compatibility Update
+
+### Fixed
+
+- Update cms_plugins.py for Django 4 compatibility (#1)
+
 ## [0.1.3]: Support Link Plugins and Image Link Attributes, Fix Link Title
 
 ### Added
@@ -40,7 +46,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 v0.1.0 Initial test release
 
-[unreleased]: https://github.com/TACC/Core-CMS-Plugin-Image-Gallery/compare/v0.1.3...HEAD
+[unreleased]: https://github.com/TACC/Core-CMS-Plugin-Image-Gallery/compare/v0.1.4...HEAD
+[0.1.4]: https://github.com/TACC/Core-CMS-Plugin-Image-Gallery/releases/tag/v0.1.4
 [0.1.3]: https://github.com/TACC/Core-CMS-Plugin-Image-Gallery/releases/tag/v0.1.3
 [0.1.2]: https://github.com/TACC/Core-CMS-Plugin-Image-Gallery/releases/tag/v0.1.2
 [0.1.1]: https://github.com/TACC/Core-CMS-Plugin-Image-Gallery/releases/tag/v0.1.1
